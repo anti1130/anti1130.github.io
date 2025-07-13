@@ -1,35 +1,0 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>실시간 채팅</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <h1>💬 실시간 채팅</h1>
-            <div class="user-info">
-                <input type="text" id="nickname" placeholder="닉네임을 입력하세요" maxlength="20">
-                <button id="setNickname">설정</button>
-            </div>
-        </div>
-        
-        <div class="chat-messages" id="messages">
-            <div class="welcome-message">
-                <p>채팅방에 오신 것을 환영합니다! 👋</p>
-                <p>닉네임을 설정하고 대화를 시작하세요.</p>
-            </div>
-        </div>
-        
-        <div class="chat-input">
-            <input type="text" id="messageInput" placeholder="메시지를 입력하세요..." maxlength="500">
-            <button id="sendButton">전송</button>
-        </div>
-    </div>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
